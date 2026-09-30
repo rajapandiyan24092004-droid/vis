@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vishva P – Suspension Design & Innovation Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfd;--bg2:#f5f5f7;--ink:#1d1d1f;--mute:#6e6e73;--faint:#c7c7cc;--blue:#0071e3;--card:#fff;--line:#d2d2d7;--nav:rgba(251,251,253,.78);
+--c1:#e6f0ff;--c2:#fff0e3;--c3:#e6f6ec;--c4:#f1e8fc;--c5:#f2f2f4;--c6:#fdebef;--m1:#f4f5f7;--m2:#b9bec5;--m3:#eef0f3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--bg2:#0d0d0f;--ink:#f5f5f7;--mute:#98989d;--faint:#48484a;--blue:#2997ff;--card:#1c1c1e;--line:#333336;--nav:rgba(0,0,0,.72);--c1:#0f2038;--c2:#33210f;--c3:#0f2b1b;--c4:#231538;--c5:#1c1c1e;--c6:#341620;--m1:#2a2b2e;--m2:#6b7078;--m3:#1f2023}}
+:root[data-theme="dark"]{--bg:#000;--bg2:#0d0d0f;--ink:#f5f5f7;--mute:#98989d;--faint:#48484a;--blue:#2997ff;--card:#1c1c1e;--line:#333336;--nav:rgba(0,0,0,.72);--c1:#0f2038;--c2:#33210f;--c3:#0f2b1b;--c4:#231538;--c5:#1c1c1e;--c6:#341620;--m1:#2a2b2e;--m2:#6b7078;--m3:#1f2023}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 19px/1.5 Inter,-apple-system,"SF Pro Text","Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{margin:0;letter-spacing:-.03em;line-height:1.05;font-weight:700}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+nav{position:fixed;inset:0 0 auto 0;z-index:9;padding-top:env(safe-area-inset-top,0px);background:var(--nav);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+nav .in{max-width:1080px;margin:0 auto;padding:0 24px;height:52px;display:flex;align-items:center;justify-content:space-between;font-size:.85rem}
+nav b{font-weight:600;font-size:.95rem}
+nav a{color:var(--ink);text-decoration:none;opacity:.8;margin-left:24px}nav a:hover{opacity:1}
+nav a.pill{background:var(--blue);color:#fff;opacity:1;padding:6px 14px;border-radius:20px}
+.w{max-width:1080px;margin:0 auto;padding:0 24px}
+.hero{text-align:center;padding:130px 24px 0}
+.hero h1{font-size:clamp(3.2rem,9.5vw,7.4rem)}
+.hero p{font-size:clamp(1.15rem,2.4vw,1.6rem);color:var(--mute);max-width:26em;margin:22px auto 26px;line-height:1.35}
+.links a{display:inline-block;color:var(--blue);text-decoration:none;font-size:1.15rem;margin:0 14px}.links a:hover{text-decoration:underline}
+.stagewrap{max-width:1080px;margin:56px auto 0;padding:0 24px}
+.stage{height:clamp(420px,62vw,680px);border-radius:32px;background:radial-gradient(70% 60% at 50% 35%,var(--card),var(--m3));display:flex;align-items:center;justify-content:center;overflow:hidden;transform-origin:50% 100%;will-change:transform}
+.stage svg{height:92%;width:auto}
+.stmt{padding:150px 0 130px;max-width:960px;margin:0 auto;padding-left:24px;padding-right:24px}
+.stmt p{font-size:clamp(1.9rem,5vw,3.6rem);letter-spacing:-.03em;line-height:1.14;font-weight:700;margin:0}
+.stmt span{color:var(--faint);transition:color .35s}.stmt span.on{color:var(--ink)}
+.nums{background:var(--bg2);padding:110px 0}
+.ng{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.ng b{display:block;font-size:clamp(3rem,6.4vw,5.2rem);letter-spacing:-.04em;line-height:1}
+.ng span{color:var(--mute);font-size:1rem;display:block;margin-top:8px}
+h2.big{font-size:clamp(2.4rem,6vw,4.4rem);margin-bottom:14px}
+.lede{color:var(--mute);font-size:1.35rem;max-width:30em;margin:0 0 44px;line-height:1.4}
+section.s{padding:120px 0}
+.rail{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px max(24px,calc((100vw - 1080px)/2)) 30px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.pc{flex:none;width:min(84vw,380px);height:480px;border-radius:28px;padding:34px;scroll-snap-align:center;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.pc small{font-size:.85rem;font-weight:600;color:var(--mute)}
+.pc h3{font-size:2.3rem;margin:8px 0 0}
+.pc p{margin:0;font-size:1.05rem;line-height:1.45}
+.pc .n{position:absolute;right:22px;bottom:6px;font-size:8rem;font-weight:700;letter-spacing:-.06em;opacity:.07;line-height:1;pointer-events:none}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.about img{width:100%;height:auto;border-radius:32px;display:block}
+.about p{font-size:1.3rem;line-height:1.45;color:var(--mute);margin:0 0 20px}.about p b{color:var(--ink);font-weight:600}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.bt{border-radius:28px;padding:34px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between}
+.bt h3{font-size:2.2rem;margin-bottom:14px}.bt li{list-style:none;padding:5px 0;font-size:1.05rem}.bt ul{margin:0;padding:0}
+.jr{border-top:1px solid var(--line)}
+.jr div{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}
+.jr b{font-size:1.9rem;letter-spacing:-.03em}.jr p{margin:0;color:var(--mute);align-self:center}.jr p strong{color:var(--ink);font-weight:600}
+.aw{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.aw div{background:var(--card);border-radius:24px;padding:28px;min-height:190px;display:flex;flex-direction:column;justify-content:flex-end}
+.aw b{font-size:1.45rem;letter-spacing:-.02em;line-height:1.15;margin-bottom:6px}.aw span{color:var(--mute);font-size:.98rem}
+.end{text-align:center;padding:150px 24px}
+.end h2{font-size:clamp(3rem,9vw,7rem)}
+.end p{color:var(--mute);font-size:1.4rem;max-width:24em;margin:20px auto 34px}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:500;padding:14px 28px;border-radius:30px;margin:6px}
+.btn.g{background:transparent;color:var(--blue);box-shadow:inset 0 0 0 1.5px var(--blue)}
+.btn:hover{filter:brightness(1.1)}
+footer{background:var(--bg2);color:var(--mute);font-size:.8rem;padding:22px 24px calc(30px + env(safe-area-inset-bottom,0px));text-align:center}
+@media(max-width:860px){.ng,.aw{grid-template-columns:1fr 1fr}.about,.bento{grid-template-columns:1fr}.about{gap:32px}.jr div{grid-template-columns:1fr;gap:4px}nav a:not(.pill){display:none}section.s{padding:80px 0}.stmt{padding:100px 24px 90px}.pc{height:440px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stage{transform:none!important}.stmt span{color:var(--ink)}}
+</style></head>
+<body>
+<nav aria-label="Main"><div class="in"><b>Vishva P</b><div><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a class="pill" href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+ <h1>Suspension.<br>Refined.</h1>
+ <p>Vishva P designs struts and shock absorbers, and takes them from first concept to start of production.</p>
+ <div class="links"><a href="#work">See the work &rsaquo;</a><a href="#contact">Get in touch &rsaquo;</a></div>
+</header>
+<div class="stagewrap"><div class="stage" id="stage">
+ <svg viewBox="0 0 300 520" role="img" aria-label="Rendering of a coil-over strut">
+  <defs>
+   <linearGradient id="mt" x1="0" x2="1"><stop offset="0" stop-color="var(--m2)"/><stop offset=".35" stop-color="var(--m1)"/><stop offset=".6" stop-color="var(--m2)"/><stop offset="1" stop-color="var(--m1)"/></linearGradient>
+   <linearGradient id="sp" x1="0" x2="1"><stop offset="0" stop-color="#0058b8"/><stop offset=".5" stop-color="#4aa3ff"/><stop offset="1" stop-color="#0058b8"/></linearGradient>
+  </defs>
+  <ellipse cx="150" cy="506" rx="70" ry="7" fill="#000" opacity=".12"/>
+  <circle cx="150" cy="38" r="22" fill="none" stroke="url(#mt)" stroke-width="10"/>
+  <rect x="142" y="58" width="16" height="200" rx="8" fill="url(#mt)"/>
+  <rect x="80" y="104" width="140" height="14" rx="7" fill="url(#mt)"/>
+  <path d="M150 118 L210 138 L90 160 L210 182 L90 204 L210 226 L90 248 L150 264" fill="none" stroke="url(#sp)" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="80" y="262" width="140" height="14" rx="7" fill="url(#mt)"/>
+  <rect x="108" y="276" width="84" height="196" rx="14" fill="url(#mt)"/>
+  <rect x="118" y="286" width="10" height="176" rx="5" fill="#fff" opacity=".45"/>
+  <rect x="108" y="352" width="84" height="6" fill="#000" opacity=".12"/><rect x="108" y="368" width="84" height="6" fill="#000" opacity=".12"/>
+  <circle cx="150" cy="486" r="18" fill="none" stroke="url(#mt)" stroke-width="10"/>
+ </svg>
+</div></div>
+
+<div class="stmt" id="stmt"><p data-words>I design the parts that hold cars steady. I take them from concept to production. And I keep finding ways to make them cost less and last longer.</p></div>
+
+<section class="nums"><div class="w"><div class="ng">
+ <div><b>3</b><span>years in automotive R&amp;D at HL Mando</span></div>
+ <div><b>Rs. 75 L</b><span>cost optimized, Bronze Award 2025</span></div>
+ <div><b>4+</b><span>vehicle programs to prototype or SOP</span></div>
+ <div><b>2×</b><span>Shining Star awards for innovation</span></div>
+</div></div></section>
+
+<section class="s" id="work"><div class="w"><h2 class="big">Selected work.</h2><p class="lede">Programs and prototypes, from first bracket concept to start of production.</p></div>
+ <div class="rail" tabindex="0" aria-label="Projects, scroll sideways">
+  <article class="pc" style="background:var(--c1)"><div><small>New concept</small><h3>AI4 / AI4 SUV</h3></div><p>Designed and implemented a new single-bracket concept that improved structural integration of the assembly.</p><div class="n">AI4</div></article>
+  <article class="pc" style="background:var(--c2)"><div><small>Prototype to SOP</small><h3>AI3 SUV</h3></div><p>Supported development through to start of production.</p><div class="n">AI3</div></article>
+  <article class="pc" style="background:var(--c3)"><div><small>EV suspension</small><h3>SU2I EV</h3></div><p>Contributed to development of the EV suspension system and its start of production.</p><div class="n">EV</div></article>
+  <article class="pc" style="background:var(--c4)"><div><small>Prototype</small><h3>HE1i</h3></div><p>Completed the prototype development phase.</p><div class="n">HE</div></article>
+  <article class="pc" style="background:var(--c6)"><div><small>Proposals</small><h3>VinFast VF 7, Mahindra Z121, Z115</h3></div><p>Supported RFQs and prepared technical design proposals matched to customer requirements and cost targets.</p><div class="n">RFQ</div></article>
+  <article class="pc" style="background:var(--c5)"><div><small>ISNEE certification</small><h3>All-Terrain Vehicle</h3></div><p>Designed and fabricated an ATV prototype.</p><div class="n">ATV</div></article>
+ </div>
+</section>
+
+<section class="s" id="about" style="background:var(--bg2)"><div class="w about">
+ <img src="photo.jpg" alt="Portrait of Vishva P" width="640" height="799">
+ <div><h2 class="big">Meet Vishva.</h2>
+  <p><b>Mechanical engineer</b> with a B.E. from Coimbatore Institute of Technology, CGPA 8.53. R&amp;D Engineer at HL Mando in Kanchipuram since June 2023.</p>
+  <p>My days are CATIA models, FEA review, root cause analysis, cost teardowns, and supplier feasibility. My goal is to turn more of those ideas into <b>patentable improvements</b> for automotive parts.</p></div>
+</div></section>
+
+<section class="s" id="skills"><div class="w"><h2 class="big">What I bring.</h2><p class="lede">Three strengths that carry a part from idea to road.</p>
+ <div class="bento">
+  <div class="bt" style="background:var(--c1)"><h3>Design</h3><ul><li>CATIA and 3DEXPERIENCE</li><li>Parametric models</li><li>Drawings and GD&amp;T</li><li>FEA review</li><li>Design for manufacture</li></ul></div>
+  <div class="bt" style="background:var(--c2)"><h3>Improve</h3><ul><li>VA/VE</li><li>Teardown and price benchmarking</li><li>Root cause analysis</li><li>DV failure resolution</li><li>Localization</li></ul></div>
+  <div class="bt" style="background:var(--c3)"><h3>Deliver</h3><ul><li>ECR/ECN and BOM control</li><li>PLM, CDM, G-ERP</li><li>Supplier feasibility</li><li>Cross-functional timelines</li><li>Prototype to SOP</li></ul></div>
+ </div></div></section>
+
+<section class="s" id="journey" style="background:var(--bg2)"><div class="w"><h2 class="big">The journey.</h2><p class="lede">From school to start of production.</p>
+ <div class="jr">
+  <div><b>2017</b><p><strong>SSLC.</strong> Sakthi High School, Vriddhachalam. 92.8%</p></div>
+  <div><b>2019</b><p><strong>HSC.</strong> Tagore Matric Hr Sec School, Attur. 84.5%</p></div>
+  <div><b>2023</b><p><strong>B.E. Mechanical.</strong> Coimbatore Institute of Technology. CGPA 8.53</p></div>
+  <div><b>Jun 2023</b><p><strong>HL Mando.</strong> Joined as R&amp;D Engineer, working on suspension components.</p></div>
+  <div><b>2025</b><p><strong>Recognition.</strong> Bronze Award for Rs. 75 Lakh cost optimization and the Learning Icon Award.</p></div>
+ </div></div></section>
+
+<section class="s"><div class="w"><h2 class="big">Recognition.</h2><p class="lede">&nbsp;</p>
+ <div class="aw">
+  <div><b>Shining Star</b><span>Innovation award, two years in a row</span></div>
+  <div><b>Bronze Award 2025</b><span>Rs. 75 Lakh cost optimization</span></div>
+  <div><b>Learning Icon 2025</b><span>HL Mando</span></div>
+  <div><b>ISNEE certified</b><span>ATV prototype design and build</span></div>
+ </div></div></section>
+
+<section class="end" id="contact" style="background:var(--bg2)">
+ <h2>Let's talk.</h2>
+ <p>Open to design, innovation, and R&amp;D roles in automotive.</p>
+ <a class="btn" href="mailto:vishvvapandiyan@gmail.com">vishvvapandiyan@gmail.com</a><a class="btn g" href="tel:+919080308810">+91 90803 08810</a>
+</section>
+<footer>Vishva P &middot; vishvvapandiyan@gmail.com</footer>
+
+<script>
+(function(){
+ var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var p=document.querySelector('[data-words]'),ws=p.textContent.split(' ');
+ p.innerHTML=ws.map(function(w){return '<span>'+w+'</span>'}).join(' ');
+ var sp=p.querySelectorAll('span'),stg=document.getElementById('stage'),box=document.getElementById('stmt');
+ function tick(){
+  var vh=innerHeight;
+  if(!reduce){var y=scrollY,k=Math.min(1,Math.max(0,y/(vh*.7)));stg.style.transform='scale('+(0.9+0.1*k)+')'}
+  if(!reduce){var r=box.getBoundingClientRect(),pr=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35))),n=Math.round(pr*sp.length);
+   for(var i=0;i<sp.length;i++)sp[i].classList.toggle('on',i<n)}
+ }
+ addEventListener('scroll',tick,{passive:true});addEventListener('resize',tick);tick();
+})();
+</script>
+</body></html>
